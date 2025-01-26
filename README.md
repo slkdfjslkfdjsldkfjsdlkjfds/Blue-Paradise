@@ -5,6 +5,7 @@ This is a Til Death Theme edit made specifically with 4:3 play in mind, there ma
 since this *is* an edit of Til Death, your settings/config from Til Death should be compatible with Blue Paradise, you could make it Purple Paradise if you want to.
 
 This repository is to document changes made to Blue Paradise, along as an archive of older versions for whatever reason.
+As for now, it supports [version 0.74.3](https://github.com/etternagame/etterna/releases/tag/v0.74.3)
 # Credits
 SnaptopZippys - Mostly idea-crafting and doing some of the code
 

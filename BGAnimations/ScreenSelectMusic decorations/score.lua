@@ -576,8 +576,8 @@ local l = Def.ActorFrame {
 local function makeText(index)
 	return UIElements.TextToolTip(1, 1, "Common Normal") .. {
 		InitCommand = function(self)
-			self:xy(frameWidth - frameX, offsetY + 240 + (index * 15)):zoom(fontScale + 0.05):halign(1):settext("")
-		end,
+			self:xy(frameWidth - 10, offsetY + 140 + (index * 15)):zoom(fontScale + 0.05):halign(1):settext("")
+		end, -- finally fixed this -rina
 		DisplayCommand = function(self)
 			local count = 0
 			if rtTable[rates[index]] ~= nil then

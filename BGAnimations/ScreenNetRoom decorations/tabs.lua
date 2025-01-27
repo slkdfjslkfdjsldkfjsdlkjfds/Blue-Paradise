@@ -76,8 +76,8 @@ else
 end
 
 local frameWidth = (SCREEN_WIDTH * (7 / 24)) / (#tabNames - 1)
-local frameX = frameWidth / 2
-local frameY = SCREEN_HEIGHT - 70
+local frameX = frameWidth + 171
+local frameY = SCREEN_HEIGHT - 65
 
 local function tabs(index)
 	local t = Def.ActorFrame {

@@ -42,7 +42,7 @@ local englishes = {
 	"z",
 	";"
 }
-local frameX = 10
+local frameX = 300
 local frameY = 300
 local active = false
 local whee
@@ -174,7 +174,7 @@ local t = Def.ActorFrame {
 		self:queuecommand("Set")
 	end,
 	OffCommand = function(self)
-		self:bouncebegin(0.2):xy(-500, 0):diffusealpha(0)
+		self:bouncebegin(0.2):xy(500, 0):diffusealpha(0)
 		self:sleep(0.04):queuecommand("Invis")
 	end,
 	InvisCommand= function(self)

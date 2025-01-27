@@ -1,4 +1,4 @@
-local oldWidth = capWideScale(280, 300)
+local oldWidth = capWideScale(-110, 300)
 local plotWidth, plotHeight = capWideScale(300,450), 160
 local plotX, plotY = oldWidth+3 + plotWidth/2, -20 + plotHeight/2
 local highest = 0

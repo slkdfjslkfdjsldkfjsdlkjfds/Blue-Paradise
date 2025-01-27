@@ -1,5 +1,5 @@
 local t = Def.ActorFrame {}
-local topFrameHeight = 35
+local topFrameHeight = 45
 local bottomFrameHeight = 54
 local borderWidth = 4
 
@@ -158,15 +158,16 @@ t[#t + 1] =
 		self:xy(0, 0):halign(0):valign(0):zoomto(SCREEN_WIDTH, topFrameHeight):diffuse(color("#000000"))
 	end
 }
+--[[
 t[#t + 1] =
 	Def.Quad {
 	InitCommand = function(self)
 		self:xy(0, topFrameHeight):halign(0):valign(1):zoomto(SCREEN_WIDTH, borderWidth):diffuse(getMainColor("highlight")):diffusealpha(
-			0.5
+			0
 		)
 	end
 }
-
+--]]
 t[#t + 1] =
 	LoadFont("Common Large") ..
 	{

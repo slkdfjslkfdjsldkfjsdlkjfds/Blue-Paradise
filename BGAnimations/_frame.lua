@@ -7,7 +7,7 @@ local borderWidth = 0
 t[#t + 1] = UIElements.QuadButton(1, 1) .. {
 	InitCommand = function(self)
 		--self:xy(0, 0):halign(0):valign(0):zoomto(SCREEN_WIDTH, topFrameHeight):diffuse(getMainColor("frames"))
-		self:Load("/Themes/Blue Paradise/Graphics/border_top.png")
+		self:Load("/Themes/Blue Paradise/Graphics/_FrameTop.png")
 		self:scaletocover(0, 0, SCREEN_WIDTH, topFrameHeight)
 		self:valign(1)
 		self:xy(SCREEN_CENTER_X, topFrameHeight)
@@ -17,7 +17,7 @@ t[#t + 1] = UIElements.QuadButton(1, 1) .. {
 t[#t + 1] = UIElements.QuadButton(1, 1) .. {
 	InitCommand = function(self)
 		--self:xy(0, SCREEN_HEIGHT):halign(0):valign(1):zoomto(SCREEN_WIDTH, bottomFrameHeight):diffuse(getMainColor("frames"))
-		self:Load("/Themes/Blue Paradise/Graphics/border_bottom.png")
+		self:Load("/Themes/Blue Paradise/Graphics/_FrameBottom.png")
 		self:scaletocover(0, 0, SCREEN_WIDTH, bottomFrameHeight)
 		self:valign(0)
 		self:xy(SCREEN_CENTER_X, SCREEN_HEIGHT-bottomFrameHeight)

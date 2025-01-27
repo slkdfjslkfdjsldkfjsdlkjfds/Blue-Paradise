@@ -8,7 +8,7 @@ t[#t + 1] =
 		end
 	}
 
-if SameColor(getMainColor("positive"),color("#9654FD")) then
+if SameColor(getMainColor("positive"),color("#6496ff")) then
 	t[#t + 1] =
 		LoadActor(THEME:GetPathG("", "_OptionsSidebar")) ..
 		{

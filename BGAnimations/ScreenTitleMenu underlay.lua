@@ -24,14 +24,14 @@ t[#t + 1] =	Def.Quad {
 --Light gray triangle
 t[#t + 1] = Def.Quad {
 	InitCommand = function(self)
-		self:xy(240, 480):halign(0):valign(0):zoomto(170, 900):rotationz(135):diffuse(getTitleColor('Line_Right')):diffusealpha(1)
+		self:xy(240, 480):halign(0):valign(0):zoomto(180, 900):rotationz(135):diffuse(getTitleColor('Line_Right')):diffusealpha(1)
 	end
 }
 
 --Dark gray triangle
 t[#t + 1] = Def.Quad {
 	InitCommand = function(self)
-		self:xy(420, 0):halign(0.9):valign(0.90):zoomto(170, 900):rotationz(135):diffuse(getTitleColor('Line_Left')):diffusealpha(1)
+		self:xy(420, 0):halign(0.9):valign(0.90):zoomto(180, 900):rotationz(135):diffuse(getTitleColor('Line_Left')):diffusealpha(1)
 		
 	end
 }
@@ -143,7 +143,7 @@ t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 
 --funny button
 t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
-	Name = "JustPutARandomLinkHereButton",
+	Name = "Button",
 	InitCommand=function(self)
 		self:xy(SCREEN_LEFT + 130,SCREEN_TOP + 5):zoom(0.25):valign(0)
 		self:diffusetopedge(Saturation(getMainColor("highlight"), 0.5))

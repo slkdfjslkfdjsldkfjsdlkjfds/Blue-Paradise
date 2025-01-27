@@ -18,8 +18,9 @@ steffenxyz - for making [grade count display](https://community.etternaonline.co
 ifwas - serving as inspiration for making an edit of Til Death. check out his theme [here](https://github.com/ifwas/unreadable-rain)
 
 # To do list:
-- fix steps display moving when in preview
 - fix cdtitle position in preview
 - actually fix playlist page
+- make top and bottom border graphics into settable colors
+- make adjustments to multi room
 
 I'll think of more to add when I come around to it

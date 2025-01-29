@@ -834,14 +834,14 @@ t[#t + 1] = UIElements.SpriteButton(1, 1, nil) .. {
 	end,
 	ChartPreviewOnMessageCommand = function(self)
 		if not itsOn then
-			self:addx(capWideScale(34, 0))
+			self:addx(capWideScale(74, 0))
 			itsOn = true
 		end
 		self:playcommand("ToolTip")
 	end,
 	ChartPreviewOffMessageCommand = function(self)
 		if itsOn then
-			self:addx(capWideScale(-34, 0))
+			self:addx(capWideScale(-74, 0))
 			itsOn = false
 		end
 		self:playcommand("ToolTip")
@@ -910,7 +910,7 @@ local function toggleButton(textEnabled, textDisabled, msg, x, extrawidth, y, en
 	local ison = false
 	return Def.ActorFrame {
 		InitCommand = function(self)
-			self:xy(110 - 115 + capWideScale(get43size(384), 384) + x, 66 + capWideScale(get43size(120), 120) + y)
+			self:xy(180 - 115 + capWideScale(get43size(384), 384) + x, 66 + capWideScale(get43size(120), 120) + y)
 			self.updatebutton = function()
 				if self.ison ~= nil then
 					ison = self.ison

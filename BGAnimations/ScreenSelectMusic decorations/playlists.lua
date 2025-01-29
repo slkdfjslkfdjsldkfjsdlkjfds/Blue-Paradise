@@ -166,7 +166,7 @@ local r = Def.ActorFrame {
 	end,
 	LoadFont("Common Large") .. {
 		InitCommand = function(self)
-			self:xy(frameX + 265, rankingY):zoom(0.4):halign(0):maxwidth(460)
+			self:xy(frameX - 215, rankingY):zoom(0.4):halign(0):maxwidth(460)
 		end,
 		DisplaySinglePlaylistMessageCommand = function(self)
 			pl = SONGMAN:GetActivePlaylist()

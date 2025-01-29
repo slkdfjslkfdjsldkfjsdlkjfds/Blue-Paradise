@@ -18,7 +18,7 @@ steffenxyz - for making [grade count display](https://community.etternaonline.co
 ifwas - serving as inspiration for making an edit of Til Death. check out his theme [here](https://github.com/ifwas/unreadable-rain)
 
 # To do list:
-- actually fix playlist page
 - make top and bottom border graphics into settable colors
+- make theme 16:9 compatible
 
 I'll think of more to add when I come around to it

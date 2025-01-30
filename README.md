@@ -16,7 +16,6 @@ spxnoire - helping Snaptop for most of the code
 steffenxyz - for making [grade count display](https://community.etternaonline.com/t/til-death-grade-count-display/499)
 
 ifwas - serving as inspiration for making an edit of Til Death. check out his theme [here](https://github.com/ifwas/unreadable-rain)
-
 # To do list:
 - make top and bottom border graphics into settable colors
 - make theme 16:9 compatible

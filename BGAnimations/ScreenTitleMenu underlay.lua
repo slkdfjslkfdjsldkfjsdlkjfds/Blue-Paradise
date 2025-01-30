@@ -154,7 +154,7 @@ t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 	end,
 	MouseDownCommand = function(self, params)
 		if params.event == "DeviceButton_left mouse button" then
-        GAMESTATE:ApplyGameCommand("urlnoexit,https://e621.net/posts/3178705")
+        GAMESTATE:ApplyGameCommand("urlnoexit,https://youtu.be/SMvPq8SNKnQ?si=nP57eRK0KFR87uye")
 		ms.ok("")
 		end
 	end

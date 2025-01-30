@@ -7,6 +7,10 @@ since this *is* an edit of Til Death, your settings/config from Til Death should
 This repository is to document changes made to Blue Paradise, along as an archive of older versions for whatever reason.
 As for now, it supports [version 0.74.3](https://github.com/etternagame/etterna/releases/tag/v0.74.3)
 # Credits
+Poco0317 - Doing most of the stuff for Til Death, presumably
+
+Darkmans39 - see: Poco0317
+
 SnaptopZippys - Mostly idea-crafting and doing some of the code
 
 spxnoire - helping Snaptop for most of the code
@@ -15,7 +19,7 @@ spxnoire - helping Snaptop for most of the code
 
 steffenxyz - for making [grade count display](https://community.etternaonline.com/t/til-death-grade-count-display/499)
 
-ifwas - serving as inspiration for making an edit of Til Death. check out his theme [here](https://github.com/ifwas/unreadable-rain)
+ifwas - serving as inspiration for making an edit of Til Death. check out his theme [here](https://github.com/ifwas/unreadable-rain), also for helping out making the 16:9 code edits
 # To do list:
 - make top and bottom border graphics into settable colors
 - make theme 16:9 compatible

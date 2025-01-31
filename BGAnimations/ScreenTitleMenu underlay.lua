@@ -7,40 +7,42 @@ local t = Def.ActorFrame {}
 local frameX = THEME:GetMetric("ScreenTitleMenu", "ScrollerX") - 10
 local frameY = THEME:GetMetric("ScreenTitleMenu", "ScrollerY")
 
---Left gray rectangle
+--Fucking Background
 t[#t + 1] = Def.Quad {
 	InitCommand = function(self)
-		self:xy(0, 0):halign(0):valign(0):zoomto(250, 900):diffuse(getTitleColor('BG_Right')):diffusealpha(1)
+		self:xy(0, 0):halign(0):valign(0):zoomto(1000, 900):diffuse(getTitleColor('BG_Right')):diffusealpha(1)
 	end
 }
 
---Right gray rectangle
+--[[
+--Right gray rectangle(not being used rn)
 t[#t + 1] =	Def.Quad {
 	InitCommand = function(self)
 		self:xy(0, 0):halign(0):valign(0):zoomto(1000, 900):diffuse(getTitleColor('BG_Right')):diffusealpha(1)
+	end
+}
+--]]
+
+--Dark gray triangle
+t[#t + 1] = Def.Quad {
+	InitCommand = function(self)
+		self:xy(240, 480):halign(0):valign(0):zoomto(170, 900):rotationz(135):diffuse(getTitleColor('Line_Right')):diffusealpha(1)
 	end
 }
 
 --Light gray triangle
 t[#t + 1] = Def.Quad {
 	InitCommand = function(self)
-		self:xy(240, 480):halign(0):valign(0):zoomto(180, 900):rotationz(135):diffuse(getTitleColor('Line_Right')):diffusealpha(1)
-	end
-}
-
---Dark gray triangle
-t[#t + 1] = Def.Quad {
-	InitCommand = function(self)
-		self:xy(420, 0):halign(0.9):valign(0.90):zoomto(180, 900):rotationz(135):diffuse(getTitleColor('Line_Left')):diffusealpha(1)
+		self:xy(capWideScale(420, 650), 0):halign(0.9):valign(0.90):zoomto(capWideScale(170, 700), 900):rotationz(135):diffuse(getTitleColor('Line_Left')):diffusealpha(1)
 		
 	end
 }
 
 --character on screen
-t[#t + 1] = Def.Quad {
-	InitCommand = function(self)
-		self:Load("Themes/Blue Paradise/Graphics/oc (doubleres).png")
-		self:xy(400, 230):halign(0):valign(0):zoomto(250, 250):diffusealpha(1)
+t[#t + 1] = Def.Sprite{
+		Texture=THEME:GetPathG("","oc");
+		InitCommand=function(self)
+		self:xy((capWideScale(get43size(500),480)), 230):halign(0):valign(0):zoomto(250, 250):diffusealpha(1)
 		end
 }
 
@@ -50,7 +52,7 @@ local playingMusicCounter = 1
 t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 	InitCommand=function(self)
 	--	self:xy(125,frameY-82):zoom(0.7):align(0.5,1)
-		self:xy(310,frameY-182):zoom(0.7)
+		self:xy(SCREEN_CENTER_X,frameY-182):zoom(0.7)
 		self:diffusetopedge(Saturation(getMainColor("highlight"), 0.5))
 		self:diffusebottomedge(Saturation(getMainColor("positive"), 0.8))
 	end,
@@ -112,7 +114,7 @@ t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 t[#t + 1] = LoadFont("Common Large") .. {
 	InitCommand=function(self)
 	--	self:xy(125,frameY-52):zoom(0.325):align(0.5,1)
-		self:xy(310,frameY-152):zoom(0.325)
+		self:xy(SCREEN_CENTER_X,frameY-152):zoom(0.325)
 		self:diffusetopedge(Saturation(getMainColor("highlight"), 0.5))
 		self:diffusebottomedge(Saturation(getMainColor("positive"), 0.8))
 	end,
@@ -126,7 +128,7 @@ t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 	Name = "Version",
 	InitCommand=function(self)
 	--	self:xy(125,frameY-35):zoom(0.25):align(0.5,1)
-		self:xy(310,frameY-135):zoom(0.25)
+		self:xy(SCREEN_CENTER_X,frameY-135):zoom(0.25)
 		self:diffusetopedge(Saturation(getMainColor("highlight"), 0.5))
 		self:diffusebottomedge(Saturation(getMainColor("positive"), 0.8))
 	end,

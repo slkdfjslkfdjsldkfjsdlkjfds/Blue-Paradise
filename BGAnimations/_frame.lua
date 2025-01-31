@@ -4,31 +4,24 @@ local bottomFrameHeight = 50
 local borderWidth = 0
 
 --Frames
-t[#t + 1] = UIElements.QuadButton(1, 1) .. {
-	InitCommand = function(self)
-		--self:xy(0, 0):halign(0):valign(0):zoomto(SCREEN_WIDTH, topFrameHeight):diffuse(getMainColor("frames"))
-		self:Load("/Themes/Blue Paradise/Graphics/_FrameTop.png")
-		self:scaletocover(0, 0, SCREEN_WIDTH, topFrameHeight)
-		self:valign(1)
-		self:xy(SCREEN_CENTER_X, topFrameHeight)
-	end
+t[#t + 1] = Def.Sprite{
+		Texture=THEME:GetPathG("","_FrameTop");
+		InitCommand=function(self)
+		self:xy(SCREEN_CENTER_X, 0):valign(0):zoom(1)
+		end
+
 }
 
-t[#t + 1] = UIElements.QuadButton(1, 1) .. {
-	InitCommand = function(self)
-		--self:xy(0, SCREEN_HEIGHT):halign(0):valign(1):zoomto(SCREEN_WIDTH, bottomFrameHeight):diffuse(getMainColor("frames"))
-		self:Load("/Themes/Blue Paradise/Graphics/_FrameBottom.png")
-		self:scaletocover(0, 0, SCREEN_WIDTH, bottomFrameHeight)
-		self:valign(0)
-		self:xy(SCREEN_CENTER_X, SCREEN_HEIGHT-bottomFrameHeight)
+t[#t + 1] = Def.Sprite{
+		Texture=THEME:GetPathG("","_FrameBottom");
+		InitCommand=function(self)
+		self:xy(SCREEN_CENTER_X, 430):valign(0):zoom(1)
 	end
 }
 
 t[#t + 1] = Def.Quad {
 	InitCommand = function(self)
-		self:xy(0, SCREEN_HEIGHT - bottomFrameHeight):halign(0):valign(0):zoomto(SCREEN_WIDTH, borderWidth):diffuse(
-			getMainColor("highlight")
-		):diffusealpha(0.5)
+		self:xy(0, SCREEN_HEIGHT - bottomFrameHeight):halign(0):valign(0):zoomto(SCREEN_WIDTH, borderWidth):diffuse(getMainColor("highlight")):diffusealpha(0.5)
 	end
 }
 

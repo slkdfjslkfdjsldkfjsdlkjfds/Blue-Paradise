@@ -21,8 +21,6 @@ steffenxyz - for making [grade count display](https://community.etternaonline.co
 
 ifwas - serving as inspiration for making an edit of Til Death. check out his theme [here](https://github.com/ifwas/unreadable-rain), also for helping out making the 16:9 code edits
 # To do list:
-- make top and bottom border graphics into settable colors
-- fix online profile tab
 - make theme 16:9 compatible
 
 I'll think of more to add when I come around to it

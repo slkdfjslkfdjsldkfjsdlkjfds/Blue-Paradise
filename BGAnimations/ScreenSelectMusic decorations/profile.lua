@@ -879,7 +879,7 @@ local function littlebits(i)
 		end,
 		LoadFont("Common Large") .. {
 			InitCommand = function(self)
-				self:xy(-285, txtDist * i):maxwidth(170 * 2):halign(0):zoom(0.575)
+				self:xy(-265, txtDist * i):maxwidth(170 * 2):halign(0):zoom(0.575)
 			end,
 			SetCommand = function(self)
 				self:settext(ms.SkillSetsTranslated[i] .. ":")
@@ -900,7 +900,8 @@ local function littlebits(i)
 					rating = DLMAN:GetSkillsetRating(ms.SkillSets[i])
 					self:settextf("%05.2f (#%i)", rating, DLMAN:GetSkillsetRank(ms.SkillSets[i]))
 					self:GetParent():x(frameX)
-					self:x(capWideScale(184,198)):maxwidth(9999)
+					--self:x(capWideScale(184,198)):maxwidth(9999)
+					self:x(-70)
 					if not IsUsingWideScreen() then self:maxwidth(270) end
 				end
 				self:diffuse(byMSD(rating))

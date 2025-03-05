@@ -84,7 +84,7 @@ t[#t+1] = Def.ActorFrame {
 	LoadFont("Common Large") .. {
 		Name = "SongTitle",
 		InitCommand = function(self)
-			self:xy(SCREEN_CENTER_X, capWideScale(124, 150))
+			self:xy(SCREEN_CENTER_X, capWideScale(44, 150))
 			self:zoom(0.25)
 			self:maxwidth(capWideScale(250 / 0.25, 180 / 0.25))
 		end,
@@ -98,7 +98,7 @@ t[#t+1] = Def.ActorFrame {
 	LoadFont("Common Large") .. {
 		Name = "SongArtist",
 		InitCommand = function(self)
-			self:xy(SCREEN_CENTER_X, capWideScale(139, 165))
+			self:xy(SCREEN_CENTER_X, capWideScale(59, 165))
 			self:zoom(0.25)
 			self:maxwidth(180 / 0.25)
 		end,
@@ -112,7 +112,7 @@ t[#t+1] = Def.ActorFrame {
 	LoadFont("Common Large") .. {
 		Name = "RateString",
 		InitCommand = function(self)
-			self:xy(SCREEN_CENTER_X, capWideScale(156, 180))
+			self:xy(SCREEN_CENTER_X, capWideScale(161, 180))
 			self:zoom(0.5)
 			self:halign(0.5)
 			self:queuecommand("Set")
@@ -1346,8 +1346,8 @@ local function scoreBoard(pn, position)
 					self:Set(ss, ss:GetPlayerStageStats())
 					self:diffusealpha(0.7)
 					self:GetChild("Line"):diffusealpha(0)
-					self:zoomto(400, 122)
-					self:xy(325, 310)
+					self:zoomto(403, 121)
+					self:xy(318, 305)
 				end,
 				ScoreChangedMessageCommand = function(self)
 					if score and judge then
@@ -1376,8 +1376,7 @@ local function scoreBoard(pn, position)
 				BeginCommand = function(self)
 					local ss = SCREENMAN:GetTopScreen():GetStageStats()
 					self:Set(ss, ss:GetPlayerStageStats())
-					self:zoomto(400,10)
-					self:xy(325, 330)
+					self:xy(318, 330)
 				end,
 				SetComboGraphMessageCommand = function(self)
 					self:Clear()

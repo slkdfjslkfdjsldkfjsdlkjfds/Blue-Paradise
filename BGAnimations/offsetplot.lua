@@ -6,11 +6,11 @@ local judge = GetTimingDifficulty()
 local tso = tst[judge]
 
 local plotWidth, plotHeight = 400, 120
-local plotX, plotY = SCREEN_WIDTH - 5 - plotWidth / 2, SCREEN_HEIGHT - 30 - plotHeight / 2
+local plotX, plotY = SCREEN_WIDTH - 10 - plotWidth / 2, SCREEN_HEIGHT - 33 - plotHeight / 2
 local dotDims, plotMargin = 2, 4
 local maxOffset = math.max(180, 180 * tso)
 local baralpha = 0.4
-local bgalpha = 0.8
+local bgalpha = 0.5
 local textzoom = 0.35
 local forcedWindow = false
 

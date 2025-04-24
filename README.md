@@ -7,7 +7,10 @@ since this *is* an edit of Til Death, your settings/config from Til Death should
 This repository is to document changes made to Blue Paradise, along as an archive of older versions for whatever reason.
 As for now, it supports [version 0.74.4](https://github.com/etternagame/etterna/releases/tag/v0.74.4)
 # Screenshots
-remind me to update this page later, too lazy to do screenshots
+(Screenshots taken at 800x600 resolution)
+![2025-04-24_093034](https://github.com/user-attachments/assets/00f0d766-c324-4df8-918f-3ab43701d9a1)
+![2025-04-24_093703](https://github.com/user-attachments/assets/9bc37edd-3cb9-4ec8-a4d1-d16cf219d0a5)
+![2025-04-24_093724](https://github.com/user-attachments/assets/13153fc1-b6e9-42d5-8840-ebee28d6d61f)
 # Credits
 Poco0317 - Doing most of the stuff for Til Death, presumably
 

@@ -59,55 +59,6 @@ t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 	OnCommand=function(self)
 		self:settext("Etterna")
 	end,
-	MouseOverCommand = function(self)
-		self:diffusealpha(0.6)
-	end,
-	MouseOutCommand = function(self)
-		self:diffusealpha(1)
-	end,
-	MouseDownCommand = function(self, params)
-		if params.event == "DeviceButton_left mouse button" then
-			local function startSong()
-				local sngs = SONGMAN:GetAllSongs()
-				if #sngs == 0 then ms.ok("No songs to play") return end
-
-				local s = sngs[math.random(#sngs)]
-				local p = s:GetMusicPath()
-				local l = s:MusicLengthSeconds()
-				local top = SCREENMAN:GetTopScreen()
-
-				local thisSong = playingMusicCounter
-				playingMusic[thisSong] = true
-
-				SOUND:StopMusic()
-				SOUND:PlayMusicPart(p, 0, l)
-	
-				ms.ok("NOW PLAYING: "..s:GetMainTitle() .. " | LENGTH: "..SecondsToMMSS(l))
-	
-				top:setTimeout(
-					function()
-						if not playingMusic[thisSong] then return end
-						playingMusicCounter = playingMusicCounter + 1
-						startSong()
-					end,
-					l
-				)
-	
-			end
-	
-			SCREENMAN:GetTopScreen():setTimeout(function()
-					playingMusic[playingMusicCounter] = false
-					playingMusicCounter = playingMusicCounter + 1
-					startSong()
-				end,
-			0.1)
-		else
-			SOUND:StopMusic()
-			playingMusic = {}
-			playingMusicCounter = playingMusicCounter + 1
-			ms.ok("Stopped music")
-		end
-	end,
 }
 
 --Theme text

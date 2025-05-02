@@ -46,8 +46,6 @@ t[#t + 1] = Def.Sprite{
 		end
 }
 
-local playingMusic = {}
-local playingMusicCounter = 1
 --Title text
 t[#t + 1] = UIElements.TextToolTip(1, 1, "Common Large") .. {
 	InitCommand=function(self)

@@ -152,12 +152,6 @@ t[#t + 1] =
 }
 
 --Frames
-t[#t + 1] =
-	Def.Quad {
-	InitCommand = function(self)
-		self:xy(0, 0):halign(0):valign(0):zoomto(SCREEN_WIDTH, topFrameHeight):diffuse(color("#000000"))
-	end
-}
 --[[
 t[#t + 1] =
 	Def.Quad {
